@@ -12,7 +12,7 @@ services:
       - pusher
       - front
     volumes:
-      - /mnt/user/appdata/wa:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
 
   front:
